@@ -14,7 +14,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy-aws": "node aws-upload.js",
-    "test": "react-scripts test",
+    "test": "echo 'There is no test'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
