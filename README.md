@@ -1,5 +1,9 @@
 ### The Github ci and deploy to AWS Guid
 
+## Setup Guilde
+This is a sample code for a Medium article, First of all I recommend you to read that.
+[CI/CD Using Github Actions And Amazon AWS S3](https://medium.com/@mranjbar.z2993/ci-cd-using-github-actions-and-amazon-aws-s3-9693db13adda)
+
 ## Set up a sample react app
 For feeling real condition, I create a website with create-react-app to check CI/CD for a react application.
 
