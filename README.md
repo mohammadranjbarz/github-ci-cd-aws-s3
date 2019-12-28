@@ -20,13 +20,14 @@ then after every push your project should be build and deploy to aws s3
 
 ### ps
 
-All I added to project is   [./aws-upload.js](aws-upload.js) , and [./github/workflows/push.yml](./github/workflows/push.yml) , So if you want
+All I added to project is   [./aws-upload.js](aws-upload.js) , and [./github/workflows/push.yml](./github/workflows/push.yml) ,  and
+and  [./aws-deploy.js](./aws-deploy.js) So if you want
 activate github CI/CD (with amazon AWS s3 deployment)
-you should just add these two files to your project and
+you should just add these three files to your project and
 ```
      "scripts": {
        "deploy-aws": "node aws-upload.js"
        }
 ```
 
-to   `package.json`
+to   `package.json`  `scripts`
