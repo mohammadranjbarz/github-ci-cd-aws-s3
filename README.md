@@ -1,4 +1,4 @@
-### The Github ci and deploy to AWS Guid
+### The Github CI and deploy to AWS Guid
 
 ## Setup Guilde
 This is a sample code for a Medium article, First of all I recommend you to read that.
