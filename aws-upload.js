@@ -1,8 +1,8 @@
 const AWS = require("aws-sdk");
 const fs = require("fs");
 const path = require("path");
+const mime = require('mime');
 const rootFolderName = process.env.BUILD_DIRECTORY || 'dist'
-
 // configuration
 const config = {
     s3BucketName: process.env.BUCKET_NAME,
@@ -51,10 +51,12 @@ function uploadFile(filePath, fileName) {
     console.log({fileName, filePath, fileKey})
     const fileContent = fs.readFileSync(filePath)
     // upload file to S3
+    const ContentType = mime.getType(filePath)
     s3.putObject({
         Bucket: config.s3BucketName,
         Key: fileKey,
-        Body: fileContent
+        Body: fileContent,
+        ContentType
     }, (err, res) => {
         if (err) {
             return console.log("Error uploading file ", err)
