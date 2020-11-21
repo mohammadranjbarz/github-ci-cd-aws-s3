@@ -1,3 +1,5 @@
+![CI/CD](https://github.com/mohammadranjbarz/github-ci-cd-aws-s3/workflows/CI/CD/badge.svg?branch=master)
+
 ### The Github CI and deploy to AWS Guid
 
 ## Setup Guilde
